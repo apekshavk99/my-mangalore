@@ -1,0 +1,120 @@
+.section1 {
+  background-image: url("/assets/images/banner.jpg");
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  background-size: cover;
+
+  .container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h1 {
+      font-size: 100px;
+      font-family: CaramelRegular;
+      font-weight: 600;
+      color: white;
+      text-shadow: 7px 7px 5px black;
+    }
+  }
+}
+
+/* Info */
+.section2 {
+  height: auto;
+  width: 100%;
+  background-color: #FCF6F5FF;
+  padding: 50px;
+  margin: 0;
+
+  .sec-2-div {
+    text-align: center;
+    align-self: center;
+  }
+}
+
+
+
+.section3 {
+  height: auto;
+  width: 100%;
+  background-image: url("/assets/images/map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .opaque-div {
+    background: #ffffffc4;
+    padding: 30px;
+
+    .info-div {
+      padding: 0;
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      .abox1 {
+        height: auto;
+        width: 300px;
+        background-color: #fcf6f5;
+        ;
+        margin: auto;
+        border-radius: 10px;
+
+        .line1 {
+          background-color: #052151;
+          ;
+          border-radius: 10px;
+          height: 75px;
+          text-align: center;
+          align-content: center;
+          display: grid;
+          color: white;
+        }
+
+        .line2 {
+          height: 200px;
+          color: #052151;
+          text-align: center;
+          padding: 10px;
+          font-size: 14px;
+        }
+      }
+    }
+
+  }
+}
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.active {
+  .rotate-center {
+    animation: rotate-center 1s ease-in-out both
+  }
+}
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0)
+  }
+
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+.sec-2-div {
+  color: #052151;
+}

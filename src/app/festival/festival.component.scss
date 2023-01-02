@@ -1,0 +1,21 @@
+.sec-banner {
+  background-repeat: no-repeat;
+  background-position: tc;
+  background-size: cover;
+  min-height: 400px;
+  width: 100%;
+
+  .opaque-div {
+    height: 100%;
+    display: grid;
+    align-content: center;
+    padding: 80px 30px;
+    min-height: 400px;
+  }
+}
+
+h3,
+p {
+  text-align: center;
+  color: #052151;
+}
