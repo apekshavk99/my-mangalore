@@ -23,7 +23,7 @@ export class FestivalComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    window.addEventListener("message", this.handleOriantation);
+    window.addEventListener("message", this.handleOriantation.bind(this));
   }
 
   setTimeout() {
